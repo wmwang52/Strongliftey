@@ -9,6 +9,8 @@ import SwiftUI
 
 struct DescriptionView: View {
     var workout: Workout
+    
+    
     var body: some View {
         NavigationStack{
             ZStack{
@@ -17,27 +19,44 @@ struct DescriptionView: View {
                 VStack{
                     Text("\(workout.title)")
                         .font(.largeTitle)
-                    .overlay{
-                        RoundedRectangle(cornerRadius: 20)
-                            .stroke(Color.gray, lineWidth: 4)
-                    }
+                        .overlay{
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color.gray, lineWidth: 4)
+                        }
                     
-                    ForEach(workout.exercises,id:\.self){ item in
+                    ForEach(workout.exercises){ item in
                         
                         VStack(alignment: .leading){
-                            Text(item.description)
                             HStack{
-                                Text("Sets: \(item.sets)")
-                                    .foregroundColor(.gray)
-                                Text("Weight: \(item.weight) lbs")
-                                    .frame(maxWidth: .infinity)
-                                    .foregroundColor(.gray)
-                                Text("Reps: \(item.reps)")
-                                    .foregroundColor(.gray)
+                                Text(item.description)
+                                    .font(.title3)
+                                    .padding(.bottom,5)
+                                
+                                Spacer()
+                                Text("\(item.sets)x\(item.reps) \(item.weight) lbs")
+                                    .font(.title3)
+                                    .padding(.bottom,5)
                             }
-                            .padding(.top,10)
+                            HStack{
+                                ForEach(0..<item.sets){_ in
+                                     
+                                    Button{
+                                        Text("HEllo")
+                                    }label: {
+                                        ZStack{
+                                            
+                                            Circle()
+                                                .frame(width: 50,height: 50)
+                                            Text("\(item.reps)")
+                                                .foregroundColor(.white)
+                                                .font(.system( size: 25.0))
+                                        }
+                                        
+                                    }
+                                }
+                            }
                         }
-                        .padding(20)
+                        .padding(.horizontal,20)
                     }
                     Spacer()
                 }

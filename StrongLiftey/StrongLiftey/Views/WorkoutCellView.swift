@@ -16,8 +16,6 @@ struct CellView: View {
         
         ZStack {
             Color(red: 255/255, green: 255/255, blue: 255/255)
-            
-            
             VStack{
                 HStack{
                     Text("\(workout.title)")
@@ -25,12 +23,8 @@ struct CellView: View {
                     Spacer()
                     Text("INPUT DATE")
                         .foregroundColor(.secondary)
-                    
                 }
                 .padding(.horizontal,20)
-                
-                
-                
                     VStack(spacing: 04){
                         ForEach(workout.exercises) {item in
                             HStack{
@@ -41,18 +35,13 @@ struct CellView: View {
                                 Text("\(item.sets)x\(item.reps) \(item.weight) lbs")
                                     .font(.title3)
                                     .padding(.top,5)
-                                
-                            
                         }.padding(.horizontal,20)
                         Divider()
-                        
                     }
                 }
             }
             .padding(.vertical)
-            
         }
-        
     }
 }
 
