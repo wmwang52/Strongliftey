@@ -9,12 +9,10 @@ import SwiftUI
 
 struct StrongLifteyTabView: View {
     var body: some View {
-        TabView {
+        
             HomeWorkoutPage()
-                .tabItem {
-                    Label("Menu", systemImage: "list.dash")
-                }   
-        }
+           
+        
     }
 }
 

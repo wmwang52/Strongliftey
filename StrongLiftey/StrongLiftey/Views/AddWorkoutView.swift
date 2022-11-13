@@ -42,7 +42,7 @@ struct AddWorkoutView: View {
                     
                     if !(title.isEmpty || workoutTitle.isEmpty || sets.isEmpty || reps.isEmpty || weight.isEmpty){
                         Button{
-                            exercises.append(Exercise(description: workoutTitle, reps: Int(reps)!, sets: Int(sets)!, weight: Int(weight)!))
+                            exercises.append(Exercise(description: workoutTitle, reps: Int(reps)!, sets: Int(sets)!, weight: Int(weight)!, button: Int(sets)!))
                             
                             workoutTitle = ""
                             sets = ""
@@ -60,10 +60,15 @@ struct AddWorkoutView: View {
                     ForEach(exercises) { exercise in
                         VStack{
                             Text(exercise.description)
+                            
                             Text("Sets: \(exercise.sets)")
+                                .frame(maxWidth:.infinity, alignment:.leading)
                             Text("Reps: \(exercise.reps)")
-                            Text("      Weight: \(exercise.weight)")
+                                .frame(maxWidth:.infinity, alignment:.leading)
+                            Text("Weight: \(exercise.weight)")
+                                .frame(maxWidth:.infinity, alignment:.leading)
                         }
+                        
                     }
                 }
             }
@@ -82,8 +87,9 @@ struct AddWorkoutView: View {
             .toolbar{
                 ToolbarItem(placement: .navigationBarTrailing){
                     if exercises.count > 0{
+                        
                     Button{
-                        vm.workouts.append(Workout(title: title, Duration: "2 Hours", exercises: exercises))
+                        vm.workouts.append(Workout(title: title, Duration: duration, exercises: exercises))
                         title = ""
                         showSheet.toggle()
 
@@ -124,7 +130,7 @@ struct ExerciseInfo: View {
 
 struct AddWorkoutView_Previews: PreviewProvider {
     
-    @State static var exercises = [Exercise(description: "Chest press", reps: 4, sets: 4, weight: 80), Exercise(description: "Chest press", reps: 4, sets: 4, weight: 80), Exercise(description: "Chest press", reps: 4, sets: 4, weight: 80)]
+    @State static var exercises = [Exercise(description: "Chest press", reps: 4, sets: 4, weight: 80, button: 4), Exercise(description: "Chest press", reps: 4, sets: 4, weight: 80, button: 4), Exercise(description: "Chest press", reps: 4, sets: 4, weight: 80, button: 4)]
     
     @State static var value = false
     

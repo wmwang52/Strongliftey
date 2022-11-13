@@ -7,9 +7,10 @@
 
 import Foundation
 
-class WorkoutViewModel: ObservableObject {
+class TempViewModel: ObservableObject {
     
-    @Published var workouts: [Workout] = []
+    @Published var number:Int = 0
     
 
+    
 }

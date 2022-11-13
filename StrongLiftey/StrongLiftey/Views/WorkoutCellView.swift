@@ -21,7 +21,7 @@ struct CellView: View {
                     Text("\(workout.title)")
                         .foregroundColor(.secondary)
                     Spacer()
-                    Text("INPUT DATE")
+                    Text("\(workout.Duration)")
                         .foregroundColor(.secondary)
                 }
                 .padding(.horizontal,20)
@@ -47,6 +47,6 @@ struct CellView: View {
 
 struct CellView_Previews: PreviewProvider {
     static var previews: some View {
-        CellView(workout: Workout(title: "Lower Split", Duration: "2 Hours", exercises: [Exercise(description: "Chest press", reps: 4, sets: 4, weight: 80), Exercise(description: "Chest press", reps: 4, sets: 4, weight: 80), Exercise(description: "Chest press", reps: 4, sets: 4, weight: 80)]))
+        CellView(workout: Workout(title: "Lower Split", Duration: "2 Hours", exercises: [Exercise(description: "Chest press", reps: 4, sets: 4, weight: 80, button: 4), Exercise(description: "Chest press", reps: 4, sets: 4, weight: 80, button: 4), Exercise(description: "Chest press", reps: 4, sets: 4, weight: 80, button: 4)]))
     }
 }

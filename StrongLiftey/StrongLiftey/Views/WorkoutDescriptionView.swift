@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct DescriptionView: View {
-    var workout: Workout
+    @State var workout: Workout
+    
     
     
     var body: some View {
@@ -16,43 +17,52 @@ struct DescriptionView: View {
             ZStack{
                 Color(red: 255/255, green: 255/255, blue: 255/255)
                     .ignoresSafeArea()
+                
+                    .navigationTitle("\(workout.title)")
+                    .navigationBarTitleDisplayMode(.inline)
                 VStack{
-                    Text("\(workout.title)")
-                        .font(.largeTitle)
-                        .overlay{
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(Color.gray, lineWidth: 4)
-                        }
-                    
-                    ForEach(workout.exercises){ item in
+                    ForEach(workout.exercises.indices){ item in
                         
                         VStack(alignment: .leading){
                             HStack{
-                                Text(item.description)
+                                Text(workout.exercises[item].description)
                                     .font(.title3)
                                     .padding(.bottom,5)
                                 
                                 Spacer()
-                                Text("\(item.sets)x\(item.reps) \(item.weight) lbs")
+                                Text("\(workout.exercises[item].sets)x\(workout.exercises[item].reps) \(workout.exercises[item].weight) lbs")
                                     .font(.title3)
                                     .padding(.bottom,5)
                             }
                             HStack{
-                                ForEach(0..<item.sets){_ in
-                                     
+                        
+                             
+                                   
                                     Button{
-                                        Text("HEllo")
+                                        if workout.exercises[item].button > 0{
+                                            workout.exercises[item].button -= 1
+                                        }
                                     }label: {
                                         ZStack{
                                             
-                                            Circle()
-                                                .frame(width: 50,height: 50)
-                                            Text("\(item.reps)")
-                                                .foregroundColor(.white)
-                                                .font(.system( size: 25.0))
+                                            Rectangle()
+                                                .frame(width: .infinity,height: 70)
+                                                .foregroundColor(Color(red: 75/255, green: 156/255, blue: 211/255))
+                                                .cornerRadius(20)
+                                                .opacity(Double(workout.exercises[item].button)/Double(workout.exercises[item].sets))
+                                            if workout.exercises[item].button > 0{
+                                                Text("Sets left \(workout.exercises[item].button)")
+                                                
+                                                    .foregroundColor(.black)
+                                                    .font(.system( size: 25.0))
+                                            } else{
+                                                Text("You're done!")
+                                                    .foregroundColor(.black)
+                                                    .font(.system( size: 25.0))
+                                            }
                                         }
                                         
-                                    }
+                                    
                                 }
                             }
                         }
@@ -74,7 +84,8 @@ func returnVolume(item:Workout) -> Int{
 }
 
 struct DescriptionView_Previews: PreviewProvider {
+    @State static var vm = WorkoutViewModel()
     static var previews: some View {
-        DescriptionView(workout: Workout(title: "Lower Split", Duration: "2 Hours", exercises: [Exercise(description: "Chest press", reps: 4, sets: 4, weight: 80), Exercise(description: "Chest press", reps: 4, sets: 4, weight: 80), Exercise(description: "Chest press", reps: 4, sets: 4, weight: 80)]))
+        DescriptionView(workout: Workout(title: "Lower Split", Duration: "2 Hours", exercises: [Exercise(description: "Chest press", reps: 4, sets: 4, weight: 80, button: 4), Exercise(description: "Chest press", reps: 4, sets: 4, weight: 80, button: 4), Exercise(description: "Chest press", reps: 4, sets: 4, weight: 80, button: 4)]))
     }
 }

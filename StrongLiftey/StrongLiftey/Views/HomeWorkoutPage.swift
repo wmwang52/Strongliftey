@@ -11,7 +11,6 @@ import SwiftUI
 
 struct HomeWorkoutPage: View {
     
-    var weekdays = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
     var examples = Workout.example
     @State var showWorkout = false
     
@@ -24,20 +23,13 @@ struct HomeWorkoutPage: View {
             
             ZStack {
                 
-                Color(red: 222/255, green: 221/255, blue: 227/255)
+                Color(red: 242/255, green: 241/255, blue: 247/255)
                     .ignoresSafeArea()
                 
                 ScrollView {
                     
-                    ZStack{
-                        Color(red: 255/255, green: 255/255, blue: 255/255)
-
-                    }.frame(height: 110)
-                        .cornerRadius(20)
-                        .padding(.horizontal, 10)
-                    
                     VStack{
-                        ForEach(examples, id: \.id) { workout in
+                        ForEach(vm.workouts, id: \.id) { workout in
                             
                             NavigationLink {
                                 DescriptionView(workout: workout)
@@ -46,7 +38,7 @@ struct HomeWorkoutPage: View {
                                 CellView(workout: workout)
                                     .foregroundColor(.black)
                             }
-                            .cornerRadius(20)
+                            .cornerRadius(10)
                             .padding([.horizontal,.top], 10)
                             
                             
@@ -62,7 +54,7 @@ struct HomeWorkoutPage: View {
                         }label: {
                             Image(systemName: "plus")
                                 .bold()
-                                .foregroundColor(.white)
+                                .foregroundColor(.blue)
                         }
                     }
                     .navigationTitle("Workouts")
@@ -84,28 +76,3 @@ struct HomeWorkoutPage_Previews: PreviewProvider {
         HomeWorkoutPage()
     }
 }
-
-//            List(vm.workouts, id: \.id) { workout in
-//
-//                NavigationLink {
-//                    DescriptionView(workout: workout)
-//
-//                } label: {
-//
-//                    CellView(workout: workout)
-//                }.ignoresSafeArea()
-//
-//            }
-//            .listStyle(.inset)
-//            .sheet(isPresented: $showSheet) {
-//                AddWorkoutView(vm: vm, showSheet: $showSheet, exercises: [])
-//            }.toolbar{
-//                Button{
-//                    showSheet.toggle()
-//                }label: {
-//                    Image(systemName: "plus")
-//                        .bold()
-//                }
-//
-//            }
-
