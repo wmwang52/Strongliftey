@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		343C8C6F29208FB1001D3FED /* AddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343C8C6E29208FB1001D3FED /* AddWorkoutView.swift */; };
+		343C8C7229208FD8001D3FED /* Exercises Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343C8C7129208FD8001D3FED /* Exercises Struct.swift */; };
+		343C8C7429208FE1001D3FED /* Workout Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343C8C7329208FE1001D3FED /* Workout Struct.swift */; };
+		343C8C772920901E001D3FED /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343C8C762920901E001D3FED /* WorkoutViewModel.swift */; };
+		34BFD721291DB25F00D4B818 /* StrongLifteyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BFD720291DB25F00D4B818 /* StrongLifteyApp.swift */; };
+		34BFD723291DB25F00D4B818 /* StrongLifteyTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BFD722291DB25F00D4B818 /* StrongLifteyTabView.swift */; };
+		34BFD725291DB26000D4B818 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34BFD724291DB26000D4B818 /* Assets.xcassets */; };
+		34BFD728291DB26000D4B818 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34BFD727291DB26000D4B818 /* Preview Assets.xcassets */; };
+		34C8F9CC291DB390005AF1A0 /* WorkoutCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C8F9CB291DB390005AF1A0 /* WorkoutCellView.swift */; };
+		34C8F9CE291DB3C9005AF1A0 /* HomeWorkoutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C8F9CD291DB3C9005AF1A0 /* HomeWorkoutPage.swift */; };
+		34C8F9D0291DB3E4005AF1A0 /* WorkoutDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C8F9CF291DB3E4005AF1A0 /* WorkoutDescriptionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		343C8C6E29208FB1001D3FED /* AddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutView.swift; sourceTree = "<group>"; };
+		343C8C7129208FD8001D3FED /* Exercises Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Exercises Struct.swift"; path = "../../../../../../../Desktop/Exercises Struct.swift"; sourceTree = "<group>"; };
+		343C8C7329208FE1001D3FED /* Workout Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workout Struct.swift"; sourceTree = "<group>"; };
+		343C8C762920901E001D3FED /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
+		34BFD71D291DB25F00D4B818 /* StrongLiftey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrongLiftey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34BFD720291DB25F00D4B818 /* StrongLifteyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongLifteyApp.swift; sourceTree = "<group>"; };
+		34BFD722291DB25F00D4B818 /* StrongLifteyTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrongLifteyTabView.swift; sourceTree = "<group>"; };
+		34BFD724291DB26000D4B818 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34BFD727291DB26000D4B818 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34C8F9CB291DB390005AF1A0 /* WorkoutCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCellView.swift; sourceTree = "<group>"; };
+		34C8F9CD291DB3C9005AF1A0 /* HomeWorkoutPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkoutPage.swift; sourceTree = "<group>"; };
+		34C8F9CF291DB3E4005AF1A0 /* WorkoutDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDescriptionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34BFD71A291DB25F00D4B818 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		343C8C7029208FBC001D3FED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				343C8C7129208FD8001D3FED /* Exercises Struct.swift */,
+				343C8C7329208FE1001D3FED /* Workout Struct.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		343C8C752920900D001D3FED /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				343C8C762920901E001D3FED /* WorkoutViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		34BFD714291DB25F00D4B818 = {
+			isa = PBXGroup;
+			children = (
+				34BFD71F291DB25F00D4B818 /* StrongLiftey */,
+				34BFD71E291DB25F00D4B818 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		34BFD71E291DB25F00D4B818 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34BFD71D291DB25F00D4B818 /* StrongLiftey.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34BFD71F291DB25F00D4B818 /* StrongLiftey */ = {
+			isa = PBXGroup;
+			children = (
+				34BFD720291DB25F00D4B818 /* StrongLifteyApp.swift */,
+				34BFD72E291DB2B400D4B818 /* Main StrongLifteyView */,
+				34C8F9CA291DB36C005AF1A0 /* Views */,
+				343C8C7029208FBC001D3FED /* Models */,
+				343C8C752920900D001D3FED /* View Model */,
+				34BFD724291DB26000D4B818 /* Assets.xcassets */,
+				34BFD726291DB26000D4B818 /* Preview Content */,
+			);
+			path = StrongLiftey;
+			sourceTree = "<group>";
+		};
+		34BFD726291DB26000D4B818 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				34BFD727291DB26000D4B818 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		34BFD72E291DB2B400D4B818 /* Main StrongLifteyView */ = {
+			isa = PBXGroup;
+			children = (
+				34BFD722291DB25F00D4B818 /* StrongLifteyTabView.swift */,
+			);
+			path = "Main StrongLifteyView";
+			sourceTree = "<group>";
+		};
+		34C8F9CA291DB36C005AF1A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				34C8F9CB291DB390005AF1A0 /* WorkoutCellView.swift */,
+				34C8F9CD291DB3C9005AF1A0 /* HomeWorkoutPage.swift */,
+				34C8F9CF291DB3E4005AF1A0 /* WorkoutDescriptionView.swift */,
+				343C8C6E29208FB1001D3FED /* AddWorkoutView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34BFD71C291DB25F00D4B818 /* StrongLiftey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34BFD72B291DB26000D4B818 /* Build configuration list for PBXNativeTarget "StrongLiftey" */;
+			buildPhases = (
+				34BFD719291DB25F00D4B818 /* Sources */,
+				34BFD71A291DB25F00D4B818 /* Frameworks */,
+				34BFD71B291DB25F00D4B818 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StrongLiftey;
+			productName = StrongLiftey;
+			productReference = 34BFD71D291DB25F00D4B818 /* StrongLiftey.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34BFD715291DB25F00D4B818 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					34BFD71C291DB25F00D4B818 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = 34BFD718291DB25F00D4B818 /* Build configuration list for PBXProject "StrongLiftey" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34BFD714291DB25F00D4B818;
+			productRefGroup = 34BFD71E291DB25F00D4B818 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34BFD71C291DB25F00D4B818 /* StrongLiftey */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34BFD71B291DB25F00D4B818 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34BFD728291DB26000D4B818 /* Preview Assets.xcassets in Resources */,
+				34BFD725291DB26000D4B818 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34BFD719291DB25F00D4B818 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				343C8C7229208FD8001D3FED /* Exercises Struct.swift in Sources */,
+				343C8C772920901E001D3FED /* WorkoutViewModel.swift in Sources */,
+				34C8F9CC291DB390005AF1A0 /* WorkoutCellView.swift in Sources */,
+				34C8F9CE291DB3C9005AF1A0 /* HomeWorkoutPage.swift in Sources */,
+				34C8F9D0291DB3E4005AF1A0 /* WorkoutDescriptionView.swift in Sources */,
+				34BFD723291DB25F00D4B818 /* StrongLifteyTabView.swift in Sources */,
+				343C8C6F29208FB1001D3FED /* AddWorkoutView.swift in Sources */,
+				34BFD721291DB25F00D4B818 /* StrongLifteyApp.swift in Sources */,
+				343C8C7429208FE1001D3FED /* Workout Struct.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		34BFD729291DB26000D4B818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		34BFD72A291DB26000D4B818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34BFD72C291DB26000D4B818 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StrongLiftey/Preview Content\"";
+				DEVELOPMENT_TEAM = 6C894L8XAD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wmwang.co.StrongLiftey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34BFD72D291DB26000D4B818 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StrongLiftey/Preview Content\"";
+				DEVELOPMENT_TEAM = 6C894L8XAD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Wmwang.co.StrongLiftey;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34BFD718291DB25F00D4B818 /* Build configuration list for PBXProject "StrongLiftey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34BFD729291DB26000D4B818 /* Debug */,
+				34BFD72A291DB26000D4B818 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34BFD72B291DB26000D4B818 /* Build configuration list for PBXNativeTarget "StrongLiftey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34BFD72C291DB26000D4B818 /* Debug */,
+				34BFD72D291DB26000D4B818 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34BFD715291DB25F00D4B818 /* Project object */;
+}
