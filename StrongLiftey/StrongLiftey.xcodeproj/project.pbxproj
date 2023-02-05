@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34009FE5298F50F1004B5799 /* Exercises Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34009FE4298F50F1004B5799 /* Exercises Struct.swift */; };
+		34009FE6298F51A6004B5799 /* Exercises Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34009FE4298F50F1004B5799 /* Exercises Struct.swift */; };
 		343C8C6F29208FB1001D3FED /* AddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343C8C6E29208FB1001D3FED /* AddWorkoutView.swift */; };
 		343C8C7429208FE1001D3FED /* Workout Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343C8C7329208FE1001D3FED /* Workout Struct.swift */; };
 		343C8C772920901E001D3FED /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343C8C762920901E001D3FED /* WorkoutViewModel.swift */; };
@@ -193,7 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34009FE5298F50F1004B5799 /* Exercises Struct.swift in Sources */,
+				34009FE6298F51A6004B5799 /* Exercises Struct.swift in Sources */,
 				343C8C772920901E001D3FED /* WorkoutViewModel.swift in Sources */,
 				34C8F9CC291DB390005AF1A0 /* WorkoutCellView.swift in Sources */,
 				34C8F9CE291DB3C9005AF1A0 /* HomeWorkoutPage.swift in Sources */,

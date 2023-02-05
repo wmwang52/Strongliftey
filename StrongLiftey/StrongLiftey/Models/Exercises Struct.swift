@@ -5,6 +5,8 @@
 //  Created by William Wang on 2/4/23.
 //
 
+import Foundation
+
 struct Exercise: Identifiable, Hashable {
     
     let id = UUID()
